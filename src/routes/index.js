@@ -7,6 +7,7 @@ import LoginComponent from "@/components/Login/LoginComponent"
 import SignupComponent from "@/components/Signup/SignupComponent"
 import SearchRoomMapComponent from "@/components/SearchRoom/SearchRoomMapComponent"
 import SearchRoomComponent from "@/components/SearchRoom/SearchRoomComponent"
+import AddFlatComponent from "@/components/AddFlat/AddFlatComponent"
 
 Vue.use(VueRouter);
 const routes = [
@@ -37,6 +38,10 @@ const routes = [
     {
         path: '/rooms',
         component: SearchRoomComponent,
+    },
+    {
+        path: '/addflat',
+        component: AddFlatComponent,
     },
 ];
 

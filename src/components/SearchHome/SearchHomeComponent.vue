@@ -63,7 +63,7 @@ export default {
              testAPI(lim,offs) {
               axios
 
-              .get(this.backUrlLocal+'lot', {
+              .get(this.backUrlProd+'lot', {
                 params: {
                   limit: lim,
                   offset: offs,
