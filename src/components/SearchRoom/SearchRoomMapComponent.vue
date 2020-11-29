@@ -1,5 +1,5 @@
 <template>
-<div class="container--fluid red">
+<div class="container-fluid red">
     <div class="map-container">
         <mapComponent :zoom=10 :dots="rooms" />
     </div> 

@@ -2,7 +2,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-sm-6 mx-auto">
-                <form action='/login' novalidate>
+                <form action='' novalidate>
                     <transition name="slide-fade">
                         <div v-show="step===1" class="step">
 
@@ -56,7 +56,7 @@
                             </div>
                             
                             <button @click="backStep" type="button" class="btn btn-light mr-2">Назад</button>
-                            <button type="submit" class="btn btn-primary">Завершить регистрацию!</button>
+                            <button class="btn btn-primary" @click="endRegistration">Завершить регистрацию!</button>
                         </div>
                     </transition>
 
@@ -128,8 +128,6 @@ export default {
         },
 
         endRegistration() {
-            this.Password__check();
-            if(this.Password_confirm === '') {
                 const headers ={
                     'Content-Type': 'application/x-www-form-urlencoded',
                 }
@@ -152,7 +150,6 @@ export default {
 
         }
     }
-}
 </script>
 
 <style scoped>
